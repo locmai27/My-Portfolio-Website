@@ -1,13 +1,213 @@
+/* Set a blue and white background with proper text colors */
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #3a7bd5 50%, #ffffff 50%);
+  color: #333; /* Default dark text color for better readability */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Navbar styling */
+header {
+  background-color: #333;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Navbar list items (inline display) */
+header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+/* Navbar links (plain text style) */
+header nav ul li a {
+  color: white;  /* Default text color */
+  text-decoration: none;  /* Remove underlines */
+  font-size: 1.2rem;  /* Increase text size for visibility */
+  transition: color 0.3s ease;  /* Smooth color transition on hover */
+}
+
+/* Change text color on hover */
+header nav ul li a:hover {
+  color: grey;  /* Change to blue on hover (or any color you prefer) */
+}
+/* General section styling */
+.section {
+  padding: 50px;
+  text-align: center;
+}
+
+/* Blue background with white text for Home and Projects sections */
+#home, #projects {
+  background-color: #3a7bd5; /* Blue background */
+  color: black; /* White text */
+}
+/* Social media icons styling */
+.social-media {
+  margin-top: 20px; /* Space between text and icons */
+}
+
+/* Style for the social media icons */
+.social-icons {
+  display: flex; /* Use flexbox for horizontal alignment */
+  justify-content: center; /* Center the icons */
+  margin-top: 20px; /* Space above the icons */
+}
+
+.social-icons a {
+  margin: 0 10px; /* Space between the icons */
+  
+}
+/* Container for the About section content */
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;  /* Space between text and image */
+  max-width: 1000px;
+  margin: 0 auto;  /* Center the content */
+}
+
+/* Change color for white background sections */
+#about {
+  background-color: #f9f9f9;  /* Light background color for the section */
+  padding: 60px 20px;         /* Extra padding for space */
+}
+
+
+/* Style for the about-text to make it italic */
+.about-text {
+  font-style: italic; /* Make the text italic */
+  max-width: 600px; /* Optional: Limit the width for readability */
+}
+
+/* Style for the selfie image */
+.selfie {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%; /* Circular image */
+  object-fit: cover; /* Ensure the image fits inside the circle */
+}
+
+/* Style for the text to adjust width */
+.about-text {
+  max-width: 600px; /* Limit the width of the text for better readability */
+}
+
+#skills {
+  background-color: #3a7bd5; /* Light background color for the section */
+  padding: 60px 20px; /* Extra padding for space */
+}
+
+/* Skills section content layout */
+.skills-content {
+  display: flex;
+  justify-content: space-around; /* Distribute skill categories evenly */
+  flex-wrap: wrap; /* Wrap content on smaller screens */
+  margin-top: 30px;
+}
+
+/* Individual skill category */
+.skill-category {
+  flex-basis: 30%; /* Each category takes 30% of the container width */
+  margin: 20px;
+  text-align: left;
+}
+
+.skill-category h3 {
+  font-size: 1.5rem;
+  color: #333; /* Heading color to match the site theme */
+  margin-bottom: 15px;
+}
+
+.skill-category ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skill-category ul li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #333; /* Dark text color */
+}
+
+/* Interests section styling */
+#interests {
+  background-color: #f4f4f4;  /* Light background */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.interests-content ul {
+  list-style-type: none;
+  padding: 0;
+  font-size: 1.1rem;
+  color: #333; /* Dark text color */
+}
+
+.interests-content ul li {
+  margin-bottom: 10px;
+  font-family: 'Open Sans', sans-serif;
+  padding: 10px;
+}
+
+#interests h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+
+/* Project list styles */
+.project-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project-item {
+  background-color: white;
+  margin: 15px;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Initial light shadow */
+  transition: box-shadow 0.3s ease;  /* Smooth transition effect */
+}
+
+/* Add a deeper shadow on hover */
+.project-item:hover {
+  cursor: pointer;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Darker, larger shadow on hover */
+  transform: translateY(-5px); /* Optional: slight upward movement on hover */
+}
+
+/* Achievements section styling */
+#achievements {
+  background-color: #f9f9f9; /* Light gray background */
+  padding: 60px 20px; /* Padding for spacing */
+  text-align: center; /* Center the text */
+}
+
+.achievements-content ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+  font-size: 1.1rem; /* Font size for the achievements */
+  color: #333; /* Dark text color */
+}
+
+.achievements-content ul li {
+  margin-bottom: 10px; /* Space between items */
+}
+
+#achievements h2 {
+  font-size: 2.5rem; /* Heading size */
+  color: #3a7bd5; /* Color to match the site theme */
+  margin-bottom: 20px; /* Space below the heading */
 }
